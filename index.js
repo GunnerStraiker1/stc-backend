@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
-var control = require('./controllers/programas')
+var programaControl = require('./controllers/programas')
 var db = require('./controllers/mysql/data')
 var multer = require('multer');
 var xlstojson = require("xls-to-json-lc");
@@ -20,8 +20,8 @@ app.get('/',function(req,res){
 });
 
 /** API path that will upload the files */
-app.post('/upload', (req, res) => control.insertarPrograma(req, res, db.connection));
-app.get('/programas', (req, res) => control.obtenerProgramas(req, res, db.connection));
+app.post('/uploadPrograma', (req, res) => programaControl.insertarPrograma(req, res, db.connection));
+app.get('/programas', (req, res) => programaControl.obtenerProgramas(req, res, db.connection));
 
 app.listen('3000', function(){
     console.log('running on 3000...');

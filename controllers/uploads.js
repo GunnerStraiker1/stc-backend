@@ -74,16 +74,16 @@ function uploadExcel(req, res, cn) {
                         break;
 
                     case 'indice':
-                        result.map((program) =>{
-                            if (program.name != '') {
+                        result.map((indice) =>{
+                            if (indice.name != '') {
                                 data.push(
-                                    [program.nombre,
-                                    program.objetivo,
-                                    program.descripcion,
-                                    program.cobertura,
-                                    program.requisitos,
-                                    program.programa,
-                                    program.periodo]
+                                    [indice.nombre,
+                                    indice.objetivo,
+                                    indice.descripcion,
+                                    indice.cobertura,
+                                    indice.requisitos,
+                                    indice.programa,
+                                    indice.periodo]
                                     )
                             }
                         })
