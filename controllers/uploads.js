@@ -58,15 +58,17 @@ function uploadExcel(req, res, cn) {
                 switch (req.params.data) {
                     case 'program':
                         result.map((program) =>{
-                            if (program.name != '') {
+                            if (program.nombre !== "" && program.nombre !== null && program.nombre !== '') {
                                 data.push(
-                                    [program.nombre,
+                                    [
+                                    program.nombre,
                                     program.objetivo,
                                     program.descripcion,
                                     program.cobertura,
                                     program.requisitos,
                                     program.programa,
-                                    program.periodo]
+                                    program.periodo
+                                ]
                                     )
                             }
                         })

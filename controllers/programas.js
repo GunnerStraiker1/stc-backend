@@ -7,9 +7,7 @@ async function insertarPrograma(req, res, cn) {
 }
 
 function obtenerProgramas(req, res, cn) {
-    // req.params.data= "program"
     mysqlFuncs.obtenerDBPrograma(req, res, cn);
-    // uploadExcel.uploadExcel(req, res, cn)
 }
 
 module.exports={

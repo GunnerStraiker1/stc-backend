@@ -7,8 +7,10 @@ var multer = require('multer');
 var xlstojson = require("xls-to-json-lc");
 var xlsxtojson = require("xlsx-to-json-lc");
 var fs = require('fs');
+var cors = require('cors');
 
 app.use(bodyParser.json());
+app.use(cors());
 
 db.connection.connect((err)=>{
     if(err) throw err
