@@ -1,6 +1,8 @@
 env: flex
 runtime: nodejs
-HOSTDB: 35.237.204.108
-USER: 'root'
-PASS: 'toor'
-DATABASE: 'backstc'
+
+env_variables:
+  HOSTDB: 35.237.204.108
+  USER: 'root'
+  PASS: 'toor'
+  DATABASE: 'backstc'
