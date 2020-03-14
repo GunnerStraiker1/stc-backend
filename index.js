@@ -9,6 +9,9 @@ var xlsxtojson = require("xlsx-to-json-lc");
 var fs = require('fs');
 var cors = require('cors');
 
+const dotenv = require('dotenv');
+dotenv.config();
+
 app.use(bodyParser.json());
 app.use(cors());
 
