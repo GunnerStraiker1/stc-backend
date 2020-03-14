@@ -30,4 +30,5 @@ app.get('/programas', (req, res) => programaControl.obtenerProgramas(req, res, d
 
 app.listen('3000', function(){
     console.log('running on 3000...');
+    console.log(process.env.USER)
 });
