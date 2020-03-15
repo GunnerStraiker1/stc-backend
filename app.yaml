@@ -1,5 +1,5 @@
 env: flex
-runtime: nodejs10
+runtime: nodejs8
 
 env_variables:
   HOSTDB: '35.237.204.108'
