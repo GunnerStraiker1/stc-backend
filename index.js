@@ -28,7 +28,7 @@ app.get('/',function(req,res){
 app.post('/uploadPrograma', (req, res) => programaControl.insertarPrograma(req, res, db.connection));
 app.get('/programas', (req, res) => programaControl.obtenerProgramas(req, res, db.connection));
 
-app.listen('3000', function(){
+app.listen('8080', function(){
     console.log('running on 3000...');
     console.log(process.env.USERDB)
 });
